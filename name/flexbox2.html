@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        #parent{
+            height: 400px;
+            width: 100vw;
+            border: 2px solid black;
+            display: flex;
+            /* justify-content: center; */
+/* justify-content: end; */
+/* align-items: center; */
+justify-content: space-evenly;
+/* flex-direction: row-reverse; */
+/* flex-direction: column-reverse; */
+flex-wrap: wrap;
+        }
+        #parentdiv{
+            height:50px;
+            width: 50px;
+            background-color: #e78a0f;
+            margin-top: 10px;
+        }
+        .one{
+             /* flex: basis 200px;  */
+             /* flex-grow: 2; */
+             flex-shrink: 2;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>flex box parent property</h1>
+    <div id="parent">
+        <div id="parentdiv" class="one">1</div>
+        <div id="parentdiv" >2</div>
+        <div id="parentdiv">3</div>
+        <div id="parentdiv">4</div>
+        <div id="parentdiv">5</div>
+        <div id="parentdiv">6</div>
+        <div id="parentdiv">7</div>
+        <div id="parentdiv">8</div>
+
+
+    </div>
+</body>
+</html>
