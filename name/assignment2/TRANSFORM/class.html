@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height:400px;
+            width:300px;
+            margin: 10px auto;
+            transition: 3s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        #main:hover{
+          transform: rotateY(180deg);
+        }
+        #card_a{
+            height: 50%;
+            position: absolute;
+            width: 100%;
+            z-index: 3;
+            backface-visibility: hidden;
+        }
+        #img{
+            height: 50%;
+            width: 100%;
+        }
+        #card_b{
+            height: 50%;
+            position: absolute;
+            width: 100%;
+            background-color: aqua;
+      transform: rotateY(180deg);
+      z-index: 3;
+
+        }
+        </style>
+</head>
+<body>
+    <div id="main">
+        <div id=card_a>
+            <img src="https://www.pinterest.com/pin/147352219038040467/" alt="hello"/>
+
+        </div>
+<div id=card_b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, accusantium perferendis recusandae mollitia magnam dolorum obcaecati similique assumenda! Amet, voluptates. Illo, beatae. Repellat consequatur tempora, beatae libero eveniet ipsam adipisci!</div>
+    </div>
+</body>
+</html>
